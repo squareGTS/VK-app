@@ -21,7 +21,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func buttonPressed(_ sender: UIButton) {
-        if phoneOrEmailTextField.text == "admin", passwordTextField.text == "12345" {
+        if phoneOrEmailTextField.text == "admin", passwordTextField.text == "qwerty" {
             print("next View Controller")
         } else {
             print("Deny")

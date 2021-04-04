@@ -14,6 +14,7 @@
 		123FFF552619939800FC018A /* VK_app.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 123FFF532619939800FC018A /* VK_app.xcdatamodeld */; };
 		123FFF572619939900FC018A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 123FFF562619939900FC018A /* Assets.xcassets */; };
 		123FFF5A2619939900FC018A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 123FFF582619939900FC018A /* LaunchScreen.storyboard */; };
+		123FFF6426199A6A00FC018A /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123FFF6326199A6A00FC018A /* SecondViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		123FFF562619939900FC018A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		123FFF592619939900FC018A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		123FFF5B2619939900FC018A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		123FFF6326199A6A00FC018A /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				123FFF4A2619939800FC018A /* AppDelegate.swift */,
 				123FFF4C2619939800FC018A /* SceneDelegate.swift */,
 				123FFF4E2619939800FC018A /* ViewController.swift */,
+				123FFF6326199A6A00FC018A /* SecondViewController.swift */,
 				123FFF502619939800FC018A /* Main.storyboard */,
 				123FFF562619939900FC018A /* Assets.xcassets */,
 				123FFF582619939900FC018A /* LaunchScreen.storyboard */,
@@ -143,6 +146,7 @@
 				123FFF552619939800FC018A /* VK_app.xcdatamodeld in Sources */,
 				123FFF4F2619939800FC018A /* ViewController.swift in Sources */,
 				123FFF4B2619939800FC018A /* AppDelegate.swift in Sources */,
+				123FFF6426199A6A00FC018A /* SecondViewController.swift in Sources */,
 				123FFF4D2619939800FC018A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

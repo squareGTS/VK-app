@@ -8,12 +8,24 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    @IBOutlet weak var phoneOrEmailTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        
+        navigationController?.isNavigationBarHidden = true
     }
 
-
+    @IBAction func buttonPressed(_ sender: UIButton) {
+        if phoneOrEmailTextField.text == "admin", passwordTextField.text == "12345" {
+            print("next View Controller")
+        } else {
+            print("Deny")
+        }
+    }
 }
 

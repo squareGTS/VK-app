@@ -42,11 +42,23 @@ class ViewController: UIViewController {
     
     @IBAction func buttonPressed(_ sender: UIButton) {
         if phoneOrEmailTextField.text == "admin", passwordTextField.text == "qwerty" {
-            print("next View Controller")
+            print("Auth vsuccess")
         } else {
-            print("Deny")
+            print("Auth deny")
         }
     }
+    
+    private func checkUserInfo() -> Bool {
+        guard let userName = phoneOrEmailTextField.text,
+              let password = passwordTextField.text,
+              userName == "admin",
+              password == "12345"
+              else {
+            return false
+        }
+        return true
+    }
+    
     
     @objc func keyboardWasShown(notification: Notification) {
         

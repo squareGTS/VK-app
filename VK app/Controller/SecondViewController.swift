@@ -8,11 +8,3 @@
 import Foundation
 
 
-class SecondViewController {
-    
-    
-    
-    
-    
-    
-}

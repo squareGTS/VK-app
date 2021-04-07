@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		121443DB261E270000CBC6B7 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 121443DA261E270000CBC6B7 /* TableViewController.swift */; };
+		121443DE261E276500CBC6B7 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 121443DD261E276500CBC6B7 /* TableViewCell.swift */; };
 		123FFF4B2619939800FC018A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123FFF4A2619939800FC018A /* AppDelegate.swift */; };
 		123FFF4D2619939800FC018A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123FFF4C2619939800FC018A /* SceneDelegate.swift */; };
 		123FFF4F2619939800FC018A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123FFF4E2619939800FC018A /* ViewController.swift */; };
@@ -18,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		121443DA261E270000CBC6B7 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		121443DD261E276500CBC6B7 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		123FFF472619939800FC018A /* VK app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VK app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		123FFF4A2619939800FC018A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		123FFF4C2619939800FC018A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -41,6 +45,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		121443D8261E251400CBC6B7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				123FFF4E2619939800FC018A /* ViewController.swift */,
+				123FFF6326199A6A00FC018A /* SecondViewController.swift */,
+				121443DA261E270000CBC6B7 /* TableViewController.swift */,
+				121443DD261E276500CBC6B7 /* TableViewCell.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		123FFF3E2619939800FC018A = {
 			isa = PBXGroup;
 			children = (
@@ -62,8 +77,7 @@
 			children = (
 				123FFF4A2619939800FC018A /* AppDelegate.swift */,
 				123FFF4C2619939800FC018A /* SceneDelegate.swift */,
-				123FFF4E2619939800FC018A /* ViewController.swift */,
-				123FFF6326199A6A00FC018A /* SecondViewController.swift */,
+				121443D8261E251400CBC6B7 /* Controller */,
 				123FFF502619939800FC018A /* Main.storyboard */,
 				123FFF562619939900FC018A /* Assets.xcassets */,
 				123FFF582619939900FC018A /* LaunchScreen.storyboard */,
@@ -144,9 +158,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				123FFF552619939800FC018A /* VK_app.xcdatamodeld in Sources */,
+				121443DB261E270000CBC6B7 /* TableViewController.swift in Sources */,
 				123FFF4F2619939800FC018A /* ViewController.swift in Sources */,
 				123FFF4B2619939800FC018A /* AppDelegate.swift in Sources */,
 				123FFF6426199A6A00FC018A /* SecondViewController.swift in Sources */,
+				121443DE261E276500CBC6B7 /* TableViewCell.swift in Sources */,
 				123FFF4D2619939800FC018A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,14 +1,22 @@
 //
-//  TableViewController.swift
+//  FriendsController.swift
 //  VK app
 //
-//  Created by Maxim Bekmetov on 07.04.2021.
+//  Created by Maxim Bekmetov on 11.04.2021.
 //
 
 import UIKit
 
-class TableViewController: UITableViewController {
+class FriendsController: UITableViewController {
 
+    var friends = [FriendsModel(name: "Maurisio", photo: UIImage(named: "iu-1") ?? UIImage()),
+                   FriendsModel(name: "Pablo", photo: UIImage(named: "iu-2") ?? UIImage()),
+                   FriendsModel(name: "Yuki", photo: UIImage(named: "iu-3") ?? UIImage()),
+                   FriendsModel(name: "June", photo: UIImage(named: "iu-4") ?? UIImage()),
+                   FriendsModel(name: "Samanta", photo: UIImage(named: "iu-5") ?? UIImage()),
+                   FriendsModel(name: "Norman", photo: UIImage(named: "iu-6") ?? UIImage()),
+                   ]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -23,28 +31,34 @@ class TableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 1
+        return friends.count
+    }
+
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 100
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "friendCell", for: indexPath) as? FriendCell
 
-        // Configure the cell...
+        cell?.labelOfFriend.text = friends[indexPath.row].name
+        cell?.photoOfFriend.image = friends[indexPath.row].photo
         
-        
-        return cell
+        return cell ?? UITableViewCell()
     }
     
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        guard let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Collection") as? TableViewController else {return}
-            self.navigationController?.pushViewController(vc , animated: true)
-           
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            friends.remove(at: indexPath.row)
+            tableView.deleteRows(at: [indexPath], with: .automatic)
+        }
     }
+  
 
     /*
     // Override to support conditional editing of the table view.

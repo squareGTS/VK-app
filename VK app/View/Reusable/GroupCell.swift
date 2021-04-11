@@ -1,14 +1,16 @@
 //
-//  TableViewCell.swift
+//  GroupCell.swift
 //  VK app
 //
-//  Created by Maxim Bekmetov on 07.04.2021.
+//  Created by Maxim Bekmetov on 11.04.2021.
 //
 
 import UIKit
 
-class TableViewCell: UITableViewCell {
+class GroupCell: UITableViewCell {
 
+    @IBOutlet weak var groupName: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

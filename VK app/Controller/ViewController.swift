@@ -11,8 +11,8 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var phoneOrEmailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
-    
     @IBOutlet weak var scrollView: UIScrollView!
+    @IBAction func unwind(for unwindSegue: UIStoryboardSegue) {}
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -48,17 +48,34 @@ class ViewController: UIViewController {
         }
     }
     
+    private func presentError(with message: String = "Wrong login or password") {
+        let alertController = UIAlertController(title: "Error", message: message, preferredStyle: .alert)
+        let okButton = UIAlertAction(title: "Ok", style: .default) { _ in
+            self.phoneOrEmailTextField.text = ""
+            self.passwordTextField.text = ""
+        }
+        
+        alertController.addAction(okButton)
+        present(alertController, animated: true)
+    }
+    
     private func checkUserInfo() -> Bool {
         guard let userName = phoneOrEmailTextField.text,
               let password = passwordTextField.text,
               userName == "admin",
               password == "12345"
               else {
+            presentError()
             return false
         }
         return true
     }
     
+    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
+        guard identifier == "goInside" else { return false }
+         
+        return checkUserInfo()
+    }
     
     @objc func keyboardWasShown(notification: Notification) {
         
@@ -83,7 +100,5 @@ class ViewController: UIViewController {
     @objc func hideKeyboard() {
         self.scrollView?.endEditing(true)
     }
-    
-    
 }
 

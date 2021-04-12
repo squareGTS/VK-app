@@ -11,15 +11,9 @@ class GroupCell: UITableViewCell {
 
     @IBOutlet weak var groupName: UILabel!
     
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+    
+    func configure(image: UIImage, name: String) {
+        groupName.text = name
+       // photoOfFriend.image = image
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
-
 }

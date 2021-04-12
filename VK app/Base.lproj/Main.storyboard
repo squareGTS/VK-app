@@ -139,7 +139,7 @@
         <!--Groups-->
         <scene sceneID="WLU-Wr-ecZ">
             <objects>
-                <tableViewController modalPresentationStyle="fullScreen" id="eef-Dp-r7n" customClass="GroupController" customModule="VK_app" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController modalPresentationStyle="fullScreen" id="eef-Dp-r7n" customClass="AllGroupsController" customModule="VK_app" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="tCc-z6-F3O">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -168,6 +168,7 @@
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="groupName" destination="rnm-OL-Fxi" id="jnr-L7-e7k"/>
+                                    <segue destination="mHO-fe-JVg" kind="show" identifier="addGroup" id="3f3-B8-V8f"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -234,7 +235,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E8Z-ws-D77" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5090.7692307692305" y="-109.47867298578198"/>
+            <point key="canvasLocation" x="5091" y="-117"/>
         </scene>
         <!--Friends-->
         <scene sceneID="mVZ-Qj-n9O">
@@ -302,22 +303,25 @@
             </objects>
             <point key="canvasLocation" x="4290.7692307692305" y="-117.29857819905213"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Groups Controller-->
         <scene sceneID="2jv-cq-343">
             <objects>
-                <tableViewController id="mHO-fe-JVg" sceneMemberID="viewController">
+                <tableViewController modalPresentationStyle="fullScreen" id="mHO-fe-JVg" customClass="GroupsController" customModule="VK_app" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="zAM-Mx-PoW">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="C1c-IP-zRI">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="GroupCell" id="C1c-IP-zRI" customClass="GroupCell" customModule="VK_app" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="390" height="43.666667938232422"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="C1c-IP-zRI" id="JnW-cm-HO2">
                                     <rect key="frame" x="0.0" y="0.0" width="390" height="43.666667938232422"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="jC7-BC-2ak" kind="unwind" identifier="addGroup" trigger="accessoryAction" unwindAction="addGroupWithSegue:" id="OPS-lo-gjP"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -328,6 +332,7 @@
                     <navigationItem key="navigationItem" id="jrL-Dr-DgN"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g3K-EU-hVW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="jC7-BC-2ak" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="5092" y="606"/>
         </scene>

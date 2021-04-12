@@ -8,48 +8,38 @@
 import UIKit
 
 class FriendsController: UITableViewController {
-
-    var friends = [FriendsModel(name: "Maurisio", photo: UIImage(named: "iu-1") ?? UIImage()),
-                   FriendsModel(name: "Pablo", photo: UIImage(named: "iu-2") ?? UIImage()),
-                   FriendsModel(name: "Yuki", photo: UIImage(named: "iu-3") ?? UIImage()),
-                   FriendsModel(name: "June", photo: UIImage(named: "iu-4") ?? UIImage()),
-                   FriendsModel(name: "Samanta", photo: UIImage(named: "iu-5") ?? UIImage()),
-                   FriendsModel(name: "Norman", photo: UIImage(named: "iu-6") ?? UIImage()),
-                   ]
+    
+    var friends = [FriendModel(name: "Maurisio", surname: "Gonzales", avatar: UIImage(named: "iu-1") ?? UIImage()),
+                   FriendModel(name: "Pablo", surname: "Pablitos", avatar: UIImage(named: "iu-2") ?? UIImage()),
+                   FriendModel(name: "Yuki", surname: "Obayashi", avatar: UIImage(named: "iu-3") ?? UIImage()),
+                   FriendModel(name: "June", surname: "Hobson", avatar: UIImage(named: "iu-4") ?? UIImage()),
+                   FriendModel(name: "Samanta", surname: "Majeta", avatar: UIImage(named: "iu-5") ?? UIImage()),
+                   FriendModel(name: "Norman", surname: "Vazovski", avatar: UIImage(named: "iu-6") ?? UIImage()),
+    ]
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
-
+    
     // MARK: - Table view data source
-
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
         return 1
     }
-
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
         return friends.count
     }
-
+    
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 100
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "friendCell", for: indexPath) as? FriendCell
-
-        cell?.labelOfFriend.text = friends[indexPath.row].name
-        cell?.photoOfFriend.image = friends[indexPath.row].photo
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "friendCell", for: indexPath) as? FriendCell else { return UITableViewCell()}
         
-        return cell ?? UITableViewCell()
+        cell.configure(image: friends[indexPath.row].avatar, name: friends[indexPath.row].fullName)
+        
+        return cell
     }
     
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
@@ -58,51 +48,4 @@ class FriendsController: UITableViewController {
             tableView.deleteRows(at: [indexPath], with: .automatic)
         }
     }
-  
-
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
-    }
-    */
-
-    /*
-    // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            // Delete the row from the data source
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
-    }
-    */
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-
-    }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
-    }
-    */
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

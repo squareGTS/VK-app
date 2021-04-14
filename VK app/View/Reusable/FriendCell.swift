@@ -16,4 +16,6 @@ class FriendCell: UITableViewCell {
         labelOfFriend.text = name
         photoOfFriend.image = image
     }
+    
+ 
 }

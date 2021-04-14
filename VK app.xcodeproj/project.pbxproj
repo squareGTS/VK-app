@@ -15,6 +15,7 @@
 		123FFF572619939900FC018A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 123FFF562619939900FC018A /* Assets.xcassets */; };
 		123FFF5A2619939900FC018A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 123FFF582619939900FC018A /* LaunchScreen.storyboard */; };
 		12B339A92624BE6A007C6C0A /* GroupsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B339A82624BE6A007C6C0A /* GroupsController.swift */; };
+		12B339C526275CB1007C6C0A /* CustomElements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B339C426275CB1007C6C0A /* CustomElements.swift */; };
 		12EBD3F92623572100CDBAD8 /* GroupModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12EBD3F82623572100CDBAD8 /* GroupModel.swift */; };
 		12EBD3FC2623576500CDBAD8 /* FriendModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12EBD3FB2623576500CDBAD8 /* FriendModel.swift */; };
 		12EBD4022623580100CDBAD8 /* FriendsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12EBD4012623580100CDBAD8 /* FriendsController.swift */; };
@@ -36,6 +37,7 @@
 		123FFF592619939900FC018A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		123FFF5B2619939900FC018A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		12B339A82624BE6A007C6C0A /* GroupsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsController.swift; sourceTree = "<group>"; };
+		12B339C426275CB1007C6C0A /* CustomElements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomElements.swift; sourceTree = "<group>"; };
 		12EBD3F82623572100CDBAD8 /* GroupModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupModel.swift; sourceTree = "<group>"; };
 		12EBD3FB2623576500CDBAD8 /* FriendModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendModel.swift; sourceTree = "<group>"; };
 		12EBD4012623580100CDBAD8 /* FriendsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsController.swift; sourceTree = "<group>"; };
@@ -92,6 +94,7 @@
 				12EBD3EF26234F3000CDBAD8 /* View */,
 				121443D8261E251400CBC6B7 /* Controller */,
 				123FFF502619939800FC018A /* Main.storyboard */,
+				12B339C426275CB1007C6C0A /* CustomElements.swift */,
 				123FFF4A2619939800FC018A /* AppDelegate.swift */,
 				123FFF4C2619939800FC018A /* SceneDelegate.swift */,
 				123FFF562619939900FC018A /* Assets.xcassets */,
@@ -206,6 +209,7 @@
 				12EBD414262365FB00CDBAD8 /* GroupCell.swift in Sources */,
 				123FFF552619939800FC018A /* VK_app.xcdatamodeld in Sources */,
 				12EBD3F92623572100CDBAD8 /* GroupModel.swift in Sources */,
+				12B339C526275CB1007C6C0A /* CustomElements.swift in Sources */,
 				12EBD4062623587700CDBAD8 /* FriendCell.swift in Sources */,
 				123FFF4F2619939800FC018A /* ViewController.swift in Sources */,
 				123FFF4B2619939800FC018A /* AppDelegate.swift in Sources */,

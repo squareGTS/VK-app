@@ -9,6 +9,8 @@ import UIKit
 
 class FriendsController: UITableViewController {
     
+    
+    
     var friends = [FriendModel(name: "Maurisio", surname: "Gonzales", avatar: UIImage(named: "iu-1") ?? UIImage()),
                    FriendModel(name: "Pablo", surname: "Pablitos", avatar: UIImage(named: "iu-2") ?? UIImage()),
                    FriendModel(name: "Yuki", surname: "Obayashi", avatar: UIImage(named: "iu-3") ?? UIImage()),

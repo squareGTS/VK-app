@@ -54,7 +54,6 @@ class ViewController: UIViewController {
             self.phoneOrEmailTextField.text = ""
             self.passwordTextField.text = ""
         }
-        
         alertController.addAction(okButton)
         present(alertController, animated: true)
     }
@@ -95,7 +94,6 @@ class ViewController: UIViewController {
         let contentInsets = UIEdgeInsets.zero
         scrollView?.contentInset = contentInsets
     }
-    
     
     @objc func hideKeyboard() {
         self.scrollView?.endEditing(true)

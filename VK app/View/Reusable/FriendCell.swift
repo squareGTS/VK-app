@@ -8,19 +8,14 @@
 import UIKit
 
 class FriendCell: UITableViewCell {
-
+    
     @IBOutlet weak var photoOfFriend: UIImageView!
     @IBOutlet weak var labelOfFriend: UILabel!
     
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+    func configure(image: UIImage, name: String) {
+        labelOfFriend.text = name
+        photoOfFriend.image = image
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
-
+    
+ 
 }

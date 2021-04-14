@@ -16,12 +16,14 @@ class PhotosCell: UICollectionViewCell {
     
     @IBAction func likeButton(_ sender: UIButton) {
         
-        arrayOfLikes += 1
+        
         
         if ((arrayOfLikes % 2) == 0) {
         sender.setImage(UIImage(named: "hartDisLike"), for: .normal)
+            arrayOfLikes += 1
         } else {
             sender.setImage(UIImage(named: "hartLike"), for: .normal)
+            arrayOfLikes -= 1
         }
         amountOfLikes.text = String(arrayOfLikes)
     }

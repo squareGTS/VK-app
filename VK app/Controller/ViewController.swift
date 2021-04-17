@@ -12,7 +12,10 @@ class ViewController: UIViewController {
     @IBOutlet weak var phoneOrEmailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var scrollView: UIScrollView!
-    @IBAction func unwind(for unwindSegue: UIStoryboardSegue) {}
+    @IBAction func unwind(for unwindSegue: UIStoryboardSegue) {
+        passwordTextField.text = ""
+        phoneOrEmailTextField.text = ""
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -63,7 +66,7 @@ class ViewController: UIViewController {
               let password = passwordTextField.text,
               userName == "admin",
               password == "12345"
-              else {
+        else {
             presentError()
             return false
         }
@@ -72,7 +75,7 @@ class ViewController: UIViewController {
     
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
         guard identifier == "goInside" else { return false }
-         
+        
         return checkUserInfo()
     }
     

@@ -7,17 +7,19 @@
 
 import UIKit
 
-class PhotosCell: UICollectionViewCell {
+class FriendPhotoCell: UICollectionViewCell {
     
-    @IBOutlet weak var photo: UIImageView!
+    @IBOutlet weak var friendsPhotoImage: UIImageView!
     @IBOutlet weak var amountOfLikes: UILabel!
+    
+    func configure(image: UIImage) {
+        friendsPhotoImage.image = image
+    }
     
     var arrayOfLikes = Int()
     
     @IBAction func likeButton(_ sender: UIButton) {
-        
-        
-        
+    
         if ((arrayOfLikes % 2) == 0) {
         sender.setImage(UIImage(named: "hartDisLike"), for: .normal)
             arrayOfLikes += 1

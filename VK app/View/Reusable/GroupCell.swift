@@ -10,10 +10,10 @@ import UIKit
 class GroupCell: UITableViewCell {
 
     @IBOutlet weak var groupName: UILabel!
-    
+    @IBOutlet weak var avatar: UIImageView!
     
     func configure(image: UIImage, name: String) {
         groupName.text = name
-       // photoOfFriend.image = image
+        avatar.image = image
     }
 }

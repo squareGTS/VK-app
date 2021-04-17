@@ -7,7 +7,7 @@
 
 import UIKit
 
-struct FriendModel {
+struct Friend {
     var name: String
     var surname: String
     var avatar: UIImage

@@ -7,12 +7,12 @@
 
 import UIKit
 
-struct GroupModel: Equatable {
+struct Group: Equatable {
     var avatar: UIImage
-    var groupName: String
+    var name: String
     
     static func == (lhs: Self, rhs: Self) -> Bool {
-        lhs.groupName == rhs.groupName
+        lhs.name == rhs.name
     }
 }
 

@@ -9,7 +9,7 @@ import UIKit
 
 class GroupsController: UITableViewController {
     
-    var groups = [GroupModel]()
+    var groups = [Group]()
     
     @IBAction func addGroup(segue: UIStoryboardSegue) {
         guard segue.identifier == "addGroup",
@@ -26,14 +26,18 @@ class GroupsController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-
-    // MARK: - Table view data source
+    
+    //MARK: - Table view data source
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
-
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return groups.count
+    }
+    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 60
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -42,7 +46,7 @@ class GroupsController: UITableViewController {
         let currentGroup = groups[indexPath.row]
         cell.configure(
             image: currentGroup.avatar,
-            name: currentGroup.groupName)
+            name: currentGroup.name)
         
         return cell
     }

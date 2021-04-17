@@ -9,14 +9,11 @@ import UIKit
 
 class AllGroupsController: UITableViewController {
     
-    var groups = [GroupModel(avatar:  UIImage(named: "iu-4") ?? UIImage(), groupName: "Stars"),
-                  GroupModel(avatar:  UIImage(named: "iu-4") ?? UIImage(), groupName: "Models"),
-                  GroupModel(avatar:  UIImage(named: "iu-4") ?? UIImage(), groupName: "Cars"),
-                  GroupModel(avatar:  UIImage(named: "iu-4") ?? UIImage(), groupName: "Apple"),
-                  GroupModel(avatar:  UIImage(named: "iu-4") ?? UIImage(), groupName: "Audio"),
-                  GroupModel(avatar:  UIImage(named: "iu-4") ?? UIImage(), groupName: "Music"),
-                  GroupModel(avatar:  UIImage(named: "iu-4") ?? UIImage(), groupName: "PC"),
-                  GroupModel(avatar:  UIImage(named: "iu-4") ?? UIImage(), groupName: "Phones"),
+    var groups = [Group(avatar:  UIImage(named: "g-1") ?? UIImage(), name: "Stars"),
+                  Group(avatar:  UIImage(named: "g-2") ?? UIImage(), name: "Models"),
+                  Group(avatar:  UIImage(named: "g-3") ?? UIImage(), name: "Cars"),
+                  Group(avatar:  UIImage(named: "g-4") ?? UIImage(), name: "Apple"),
+                  Group(avatar:  UIImage(named: "g-5") ?? UIImage(), name: "Audio"),
     ]
     
     override func viewDidLoad() {
@@ -24,7 +21,6 @@ class AllGroupsController: UITableViewController {
     }
     
     // MARK: - Table view data source
-    
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
@@ -33,13 +29,18 @@ class AllGroupsController: UITableViewController {
         return groups.count
     }
     
-     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 60
+    }
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "groupCell", for: indexPath) as? GroupCell else { return UITableViewCell() }
-     
-        cell.groupName.text = groups[indexPath.row].groupName
-     
-     return cell
-     }
+        
+        let curentGroup = groups[indexPath.row]
+        cell.configure(image: curentGroup.avatar, name: curentGroup.name)
+        
+        return cell
+    }
     
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {

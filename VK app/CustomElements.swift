@@ -10,7 +10,7 @@ import UIKit
 import UIKit
 
 class AvatarImage: UIImageView {
-    @IBInspectable var borderColor: UIColor = .blue
+    @IBInspectable var borderColor: UIColor = .black
     @IBInspectable var borderWidth: CGFloat = 1
     
     override func awakeFromNib() {
@@ -22,10 +22,10 @@ class AvatarImage: UIImageView {
 }
 
 class AvatarBackShadow: UIView {
-    @IBInspectable var shadowColor: UIColor = .lightGray
+    @IBInspectable var shadowColor: UIColor = .black
     @IBInspectable var shadowOffset: CGSize = CGSize(width: 0.0, height: -3)
     @IBInspectable var shadowOpacity: Float = 0.8
-    @IBInspectable var shadowRadius: CGFloat = 3
+    @IBInspectable var shadowRadius: CGFloat = 5
     
     override func awakeFromNib() {
        // self.backgroundColor = .clear
@@ -33,5 +33,6 @@ class AvatarBackShadow: UIView {
         self.layer.shadowOffset = shadowOffset
         self.layer.shadowOpacity = shadowOpacity
         self.layer.shadowRadius = shadowRadius
+        self.layer.cornerRadius = self.frame.height / 2
     }
 }

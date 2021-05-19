@@ -131,7 +131,7 @@ struct Friend {
                 ]),
         Friend(name: "Samanta", surname: "Majeta", avatar: UIImage(named: "s-1"), photos:
                 [Photo(photos: UIImage(named: "s-1"), like: false, likeCount: 0, comentCount: 0),
-                Photo(photos: UIImage(named: "s-2"), like: false, likeCount: 0, comentCount: 0),
+                 Photo(photos: UIImage(named: "s-2"), like: false, likeCount: 0, comentCount: 0),
                  Photo(photos: UIImage(named: "s-3"), like: false, likeCount: 0, comentCount: 0),
                  Photo(photos: UIImage(named: "s-4"), like: false, likeCount: 0, comentCount: 0),
                  Photo(photos: UIImage(named: "s-5"), like: false, likeCount: 0, comentCount: 0),
@@ -146,7 +146,7 @@ struct Friend {
                 ])
     ]
     
-   static func getSortedUsers(searchText: String?) -> [Character:[Friend]]{
+    static func getSortedUsers(searchText: String?) -> [Character:[Friend]]{
         var tempUsers: [Friend]
         if let text = searchText?.lowercased(), searchText != "" {
             tempUsers = Friend.list.filter{ $0.name.lowercased().contains(text)}

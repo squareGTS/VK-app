@@ -46,7 +46,7 @@
                         </subviews>
                     </stackView>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2jO-t4-Zbi" customClass="ComentControl" customModule="VK_app" customModuleProvider="target">
-                        <rect key="frame" x="75" y="373" width="30" height="30"/>
+                        <rect key="frame" x="80" y="373" width="30" height="30"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="30" id="nNB-eb-Q9r"/>
@@ -64,7 +64,7 @@
                         <state key="normal" image="ellipsis" catalog="system"/>
                     </button>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cqg-JL-ovW" customClass="LikeControl" customModule="VK_app" customModuleProvider="target">
-                        <rect key="frame" x="25" y="373" width="30" height="30"/>
+                        <rect key="frame" x="30" y="373" width="30" height="30"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="30" id="fp3-o6-P0q"/>
@@ -87,7 +87,7 @@
                     <constraint firstAttribute="bottom" secondItem="Cqg-JL-ovW" secondAttribute="bottom" constant="42" id="iCK-Af-dlk"/>
                     <constraint firstItem="Bgr-f3-m5F" firstAttribute="leading" secondItem="KEk-H9-VSU" secondAttribute="leading" constant="30" id="iKH-3L-vQB"/>
                     <constraint firstItem="2jO-t4-Zbi" firstAttribute="centerY" secondItem="Cqg-JL-ovW" secondAttribute="centerY" id="jnR-2p-rMi"/>
-                    <constraint firstItem="Cqg-JL-ovW" firstAttribute="leading" secondItem="KEk-H9-VSU" secondAttribute="leading" constant="25" id="xgl-4n-Cxz"/>
+                    <constraint firstItem="Cqg-JL-ovW" firstAttribute="leading" secondItem="KEk-H9-VSU" secondAttribute="leading" constant="30" id="xgl-4n-Cxz"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>

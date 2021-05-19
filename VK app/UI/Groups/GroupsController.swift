@@ -9,16 +9,16 @@ import UIKit
 
 class GroupsController: UITableViewController {
     
-    var groups = [Group]()
+    var group = [Group]()
     
     @IBAction func addGroup(segue: UIStoryboardSegue) {
         guard segue.identifier == "addGroup",
               let allGroupsController = segue.source as? AllGroupsController,
               let indexPath = allGroupsController.tableView.indexPathForSelectedRow
         else { return }
-        let group = allGroupsController.groups[indexPath.row]
-        if !groups.contains(group) {
-            groups.append(group)
+        let groups = allGroupsController.group[indexPath.row]
+        if !group.contains(groups) {
+            group.append(groups)
             tableView.reloadData()
         }
     }
@@ -33,7 +33,7 @@ class GroupsController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return groups.count
+        return group.count
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -43,11 +43,20 @@ class GroupsController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "groupCell") as? GroupCell else { return UITableViewCell() }
         
-        let currentGroup = groups[indexPath.row]
-        cell.configure(
-            image: currentGroup.avatar,
-            name: currentGroup.name)
+        let currentGroup = group[indexPath.row]
         
+        if let avatar = currentGroup.avatar {
+            cell.configure(
+                image: avatar,
+                name: currentGroup.name)
+        }
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            group.remove(at: indexPath.row)
+            tableView.deleteRows(at: [indexPath], with: .automatic)
+        }
     }
 }

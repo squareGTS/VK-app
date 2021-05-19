@@ -46,19 +46,19 @@ class ComentControl: UIControl {
     
     func setComentCounterLabel() {
         addSubview(comentCountLabel)
-        let comentString: String?
-        
-        switch comentCounter {
-        case 0..<1000:
-            comentString = String(self.comentCounter)
-        case 1000..<1_000_000:
-            comentString = String(self.comentCounter / 1000) + "K"
-        default:
-            comentString = "_"
-        }
-        
-        UIView.transition(with: comentCountLabel, duration: 0.3, options: .transitionFlipFromTop, animations: {[unowned self] in self.comentCountLabel.text = String(comentString!)
-        })
+//        let comentString: String?
+//
+//        switch comentCounter {
+//        case 0..<1000:
+//            comentString = String(self.comentCounter)
+//        case 1000..<1_000_000:
+//            comentString = String(self.comentCounter / 1000) + "K"
+//        default:
+//            comentString = "_"
+//        }
+//
+//        UIView.transition(with: comentCountLabel, duration: 0.3, options: .transitionFlipFromTop, animations: {[unowned self] in self.comentCountLabel.text = String(comentString!)
+//        })
         
         comentCountLabel.textColor = #colorLiteral(red: 0.342677474, green: 0.5144165754, blue: 0.7103293538, alpha: 1)
         comentCountLabel.translatesAutoresizingMaskIntoConstraints = false

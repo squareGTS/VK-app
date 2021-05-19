@@ -12,19 +12,31 @@ class NewsCellXib: UITableViewCell {
     static let reusedId = "NewsCellXib"
     
     @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var descriptionLabel: UILabel!
-    @IBOutlet weak var photoLabel: UIImageView!
+    @IBOutlet weak var avatarImage: UIImageView!
+    @IBOutlet weak var dateLabel: UILabel!
+    @IBOutlet weak var photoImage: UIImageView!
     @IBOutlet weak var likeControl: LikeControl!
+    @IBOutlet weak var comentControl: LikeControl!
+    
+    override func prepareForReuse() {
+        titleLabel.text = ""
+        photoImage.image = UIImage(named: "PlaceHolderImage")
+    }
     
     func configure(_ news: News) {
         titleLabel.text = news.title
-        descriptionLabel.text = news.title
-        
+        dateLabel.text = news.date
         
         if let image = news.avatar {
-            photoLabel.image = image
+            avatarImage.image = image
         } else {
-            photoLabel.image = UIImage(named: "PlaceHolderImage")
+            avatarImage.image = UIImage(named: "PlaceHolderImage")
+        }
+        
+        if let image = news.photo[0].photos {
+            photoImage.image = image
+        } else {
+            photoImage.image = UIImage(named: "PlaceHolderImage")
         }
     }
 }

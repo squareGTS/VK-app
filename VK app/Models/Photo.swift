@@ -10,5 +10,6 @@ import UIKit
 struct Photo {
     var photos: UIImage?
     var like: Bool
-    var count: Int
+    var likeCount: Int
+    var comentCount: Int
 }

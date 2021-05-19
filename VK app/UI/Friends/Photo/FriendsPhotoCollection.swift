@@ -36,7 +36,7 @@ class FriendsPhotoCollection: UICollectionViewController, UICollectionViewDelega
         cell.configure(image: userImages[indexPath.row].photos ?? UIImage(), likeCount: indexPath.item * 10)
         cell.likeControlTapped = {[weak self] likeCount in
             print(likeCount)
-            self?.userImages[indexPath.item].count = likeCount
+            self?.userImages[indexPath.item].likeCount = likeCount
             
         }
         return cell

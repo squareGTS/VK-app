@@ -30,7 +30,6 @@ class FriendCellXib: UITableViewCell {
         
         if let image = friend.avatar {
             photoImageView.image = image
-
         } else {
             photoImageView.image = UIImage(named: "PlaceHolderImage")
         }

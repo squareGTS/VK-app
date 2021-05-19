@@ -19,7 +19,6 @@
 		1269065F26519CF000572BAD /* FriendCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1269065E26519CF000572BAD /* FriendCell.xib */; };
 		1269066126519E5000572BAD /* FriendCellXib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1269066026519E5000572BAD /* FriendCellXib.swift */; };
 		1269067B2653937400572BAD /* HeaderSectionTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1269067A2653937400572BAD /* HeaderSectionTableView.swift */; };
-		1269067E2653FF3B00572BAD /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1269067D2653FF3B00572BAD /* NewsViewController.swift */; };
 		126906802653FF7900572BAD /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1269067F2653FF7900572BAD /* News.swift */; };
 		126906822654039300572BAD /* NewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126906812654039300572BAD /* NewsView.swift */; };
 		12690684265405C000572BAD /* NewsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 12690683265405C000572BAD /* NewsCell.xib */; };
@@ -35,6 +34,7 @@
 		12EBD40D262363DE00CDBAD8 /* FriendsPhotoCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12EBD40C262363DE00CDBAD8 /* FriendsPhotoCollection.swift */; };
 		12EBD411262365E600CDBAD8 /* AllGroupsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12EBD410262365E600CDBAD8 /* AllGroupsController.swift */; };
 		12EBD414262365FB00CDBAD8 /* GroupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12EBD413262365FB00CDBAD8 /* GroupCell.swift */; };
+		12F0578C2654EDBE0033B761 /* ComentControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F0578B2654EDBE0033B761 /* ComentControl.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,7 +52,6 @@
 		1269065E26519CF000572BAD /* FriendCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FriendCell.xib; sourceTree = "<group>"; };
 		1269066026519E5000572BAD /* FriendCellXib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendCellXib.swift; sourceTree = "<group>"; };
 		1269067A2653937400572BAD /* HeaderSectionTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderSectionTableView.swift; sourceTree = "<group>"; };
-		1269067D2653FF3B00572BAD /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
 		1269067F2653FF7900572BAD /* News.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
 		126906812654039300572BAD /* NewsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsView.swift; sourceTree = "<group>"; };
 		12690683265405C000572BAD /* NewsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsCell.xib; sourceTree = "<group>"; };
@@ -68,6 +67,7 @@
 		12EBD40C262363DE00CDBAD8 /* FriendsPhotoCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsPhotoCollection.swift; sourceTree = "<group>"; };
 		12EBD410262365E600CDBAD8 /* AllGroupsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllGroupsController.swift; sourceTree = "<group>"; };
 		12EBD413262365FB00CDBAD8 /* GroupCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupCell.swift; sourceTree = "<group>"; };
+		12F0578B2654EDBE0033B761 /* ComentControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComentControl.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,7 +145,6 @@
 		1269067C2653FF2300572BAD /* News */ = {
 			isa = PBXGroup;
 			children = (
-				1269067D2653FF3B00572BAD /* NewsViewController.swift */,
 				126906812654039300572BAD /* NewsView.swift */,
 				12690687265408E400572BAD /* Cell */,
 			);
@@ -205,6 +204,7 @@
 			isa = PBXGroup;
 			children = (
 				123ECD1526513A3C00D3D8C8 /* LikeControl.swift */,
+				12F0578B2654EDBE0033B761 /* ComentControl.swift */,
 				128E7FC5265167C700C93636 /* LettersControl.swift */,
 			);
 			path = Controls;
@@ -296,10 +296,10 @@
 				128E7FC42651560D00C93636 /* Photo.swift in Sources */,
 				126906822654039300572BAD /* NewsView.swift in Sources */,
 				12EBD411262365E600CDBAD8 /* AllGroupsController.swift in Sources */,
+				12F0578C2654EDBE0033B761 /* ComentControl.swift in Sources */,
 				12EBD40D262363DE00CDBAD8 /* FriendsPhotoCollection.swift in Sources */,
 				12B339A92624BE6A007C6C0A /* GroupsController.swift in Sources */,
 				12EBD3FC2623576500CDBAD8 /* Friend.swift in Sources */,
-				1269067E2653FF3B00572BAD /* NewsViewController.swift in Sources */,
 				128E7FC6265167C700C93636 /* LettersControl.swift in Sources */,
 				12EBD414262365FB00CDBAD8 /* GroupCell.swift in Sources */,
 				1269065B2651746E00572BAD /* UserController.swift in Sources */,

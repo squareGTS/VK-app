@@ -117,7 +117,7 @@ extension UserViewController: UISearchResultsUpdating{
 }
 
 //MARK:- UITableViewDelegate
-extension UserViewController: UITableViewDelegate{
+extension UserViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         //tableView.deselectRow(at: indexPath, animated: true)
         
@@ -137,7 +137,7 @@ extension UserViewController: UITableViewDelegate{
 }
 
 //MARK:- UITableViewDataSource
-extension UserViewController: UITableViewDataSource{
+extension UserViewController: UITableViewDataSource {
     
     func numberOfSections(in tableView: UITableView) -> Int {
         if searchBarIsEmpty {

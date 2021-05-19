@@ -7,25 +7,34 @@
 
 import UIKit
 
-class NewsTableView: UIViewController {
+class NewsTableViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
-    var news = [News]()
+    var news = News.list
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        tableView.register(UINib(nibName: "NewsCellXib", bundle: nil), forCellReuseIdentifier: NewsCellXib.reusedId)
+        tableView.register(UINib(nibName: "NewsCell", bundle: nil), forCellReuseIdentifier: NewsCellXib.reusedId)
         
+       // tableView.delegate = self
+        tableView.dataSource = self
     }
 }
 
-extension NewsTableView: UITableViewDelegate {
-    
+//MARK:- UITableViewDelegate
+extension NewsTableViewController: UITableViewDelegate {
+//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+//
+//        let controller = storyboard.instantiateViewController(withIdentifier: "") as?
+//    }
 }
 
-extension NewsTableView: UITableViewDataSource {
+
+//MARK:- UITableViewDataSource
+extension NewsTableViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return news.count
     }
@@ -33,17 +42,11 @@ extension NewsTableView: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: NewsCellXib.reusedId, for: indexPath) as! NewsCellXib
         
-        
-        
         let news = news[indexPath.row]
-        
         cell.configure(news)
-        
         
         return cell
     }
-    
-    
 }
 
 

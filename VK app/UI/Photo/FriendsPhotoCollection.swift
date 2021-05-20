@@ -7,7 +7,7 @@
 
 import UIKit
 
-class FriendsPhotoCollection: UICollectionViewController, UICollectionViewDelegateFlowLayout {
+class FriendsPhotoCollection: UICollectionViewController {
     
     let spacing: CGFloat = 20
     let itemsInRow = 1
@@ -31,16 +31,19 @@ class FriendsPhotoCollection: UICollectionViewController, UICollectionViewDelega
         guard
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "photoCell", for: indexPath) as? FriendPhotoCell
         else { return UICollectionViewCell() }
+        // cell.friendsPhotoImage.image = userImages[indexPath.row]
         
-       // cell.friendsPhotoImage.image = userImages[indexPath.row]
         cell.configure(image: userImages[indexPath.row].photos ?? UIImage(), likeCount: indexPath.item * 10)
         cell.likeControlTapped = {[weak self] likeCount in
             print(likeCount)
-            self?.userImages[indexPath.item].count = likeCount
-            
+            self?.userImages[indexPath.item].likeCount = likeCount
         }
         return cell
     }
+}
+
+//MARK:- UICollectionViewDelegateFlowLayout
+extension FriendsPhotoCollection: UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         

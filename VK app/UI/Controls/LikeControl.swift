@@ -40,7 +40,7 @@ class LikeControl: UIControl {
         self.addSubview(imageView)
         self.addTarget(self, action: #selector(tapControl), for: .touchUpInside)
         
-        imageView.tintColor = #colorLiteral(red: 0.8078431487, green: 0.02745098062, blue: 0.3333333433, alpha: 1)
+        imageView.tintColor = #colorLiteral(red: 0.937254902, green: 0.2345213085, blue: 0, alpha: 1)
         imageView.image = UIImage(systemName: "heart")
         
         setLikeCounterLabel()
@@ -62,7 +62,7 @@ class LikeControl: UIControl {
             
         })
         
-        likeCountLabel.textColor = #colorLiteral(red: 0.8078431487, green: 0.02745098062, blue: 0.3333333433, alpha: 1)
+        likeCountLabel.textColor = #colorLiteral(red: 0.937254902, green: 0.2345213085, blue: 0, alpha: 1)
         likeCountLabel.translatesAutoresizingMaskIntoConstraints = false
         
         likeCountLabel.trailingAnchor.constraint(equalTo: imageView.leadingAnchor, constant: -8).isActive = true

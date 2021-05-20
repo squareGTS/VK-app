@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="NEJ-LV-Phx">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
@@ -9,10 +9,86 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Loading View Controller-->
+        <scene sceneID="EFj-XF-v4f">
+            <objects>
+                <viewController id="NEJ-LV-Phx" customClass="LoadingViewController" customModule="VK_app" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dEm-E4-Va5" customClass="Loading">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="Frf-s8-Y53">
+                                <rect key="frame" x="131" y="412" width="128" height="20"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sgD-8S-zKQ">
+                                        <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                                        <color key="backgroundColor" red="0.33333334329999997" green="0.45098042490000001" blue="0.58823531870000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="sgD-8S-zKQ" secondAttribute="height" multiplier="1:1" id="BJ8-yp-hmM"/>
+                                            <constraint firstAttribute="height" constant="20" id="dOT-oT-Bmn"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wCk-PT-VJn">
+                                        <rect key="frame" x="27" y="0.0" width="20" height="20"/>
+                                        <color key="backgroundColor" red="0.33333334329999997" green="0.45098042490000001" blue="0.58823531870000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="wCk-PT-VJn" secondAttribute="height" multiplier="1:1" id="PhJ-zR-xZX"/>
+                                            <constraint firstAttribute="width" secondItem="wCk-PT-VJn" secondAttribute="height" multiplier="1:1" id="fLq-Ir-6HF"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="20" id="hiw-fi-q5C"/>
+                                            <constraint firstAttribute="height" constant="20" id="j0B-5q-cuc"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fRk-H2-9lK">
+                                        <rect key="frame" x="54" y="0.0" width="20" height="20"/>
+                                        <color key="backgroundColor" red="0.33333334329999997" green="0.45098042490000001" blue="0.58823531870000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="Aft-Tr-4lM"/>
+                                            <constraint firstAttribute="width" secondItem="fRk-H2-9lK" secondAttribute="height" multiplier="1:1" id="XPe-I8-3Pm"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MzS-iX-wUh">
+                                        <rect key="frame" x="81" y="0.0" width="20" height="20"/>
+                                        <color key="backgroundColor" red="0.33333334329999997" green="0.45098042490000001" blue="0.58823531870000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="MzS-iX-wUh" secondAttribute="height" multiplier="1:1" id="ukC-R1-cjp"/>
+                                            <constraint firstAttribute="height" constant="20" id="yD6-q8-UFI"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XGK-YV-cDi">
+                                        <rect key="frame" x="108" y="0.0" width="20" height="20"/>
+                                        <color key="backgroundColor" red="0.33333334329999997" green="0.45098042490000001" blue="0.58823531870000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="XGK-YV-cDi" secondAttribute="height" multiplier="1:1" id="581-Xu-9Vs"/>
+                                            <constraint firstAttribute="height" constant="20" id="jbL-xl-Rc7"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="kaa-RO-nhG"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Frf-s8-Y53" firstAttribute="centerX" secondItem="dEm-E4-Va5" secondAttribute="centerX" id="McD-vx-x8Y"/>
+                            <constraint firstItem="Frf-s8-Y53" firstAttribute="centerY" secondItem="dEm-E4-Va5" secondAttribute="centerY" id="vvk-bC-VRT"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="firstDot" destination="sgD-8S-zKQ" id="FBc-Rd-8jJ"/>
+                        <outlet property="fivethDot" destination="XGK-YV-cDi" id="ZSR-eN-PCu"/>
+                        <outlet property="forthDot" destination="MzS-iX-wUh" id="ZXn-Gd-5QN"/>
+                        <outlet property="secondDot" destination="wCk-PT-VJn" id="3YZ-qg-kSO"/>
+                        <outlet property="thirdDot" destination="fRk-H2-9lK" id="Gd6-do-zeU"/>
+                        <segue destination="BYZ-38-t0r" kind="show" id="NF7-K0-sOp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="edg-9T-Sbb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="493.84615384615381" y="605.68720379146919"/>
+        </scene>
+        <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="VK_app" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" modalPresentationStyle="fullScreen" id="BYZ-38-t0r" customClass="LoginViewController" customModule="VK_app" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

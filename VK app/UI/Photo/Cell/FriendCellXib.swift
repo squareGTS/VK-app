@@ -17,7 +17,12 @@ class FriendCellXib: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        selectionStyle = .none
+        // selectionStyle = .none
+        
+        let tap = UITapGestureRecognizer()
+        tap.addTarget(self, action: #selector(tapedOnName))
+        photoImageView.addGestureRecognizer(tap)
+        photoImageView.isUserInteractionEnabled = true
     }
     
     override func prepareForReuse() {
@@ -32,6 +37,23 @@ class FriendCellXib: UITableViewCell {
             photoImageView.image = image
         } else {
             photoImageView.image = UIImage(named: "PlaceHolderImage")
+        }
+    }
+    
+    @objc func tapedOnName(_ tapGestureRecognizer: UITapGestureRecognizer){
+        UIView.animate(withDuration: 0.3,
+                       delay: 0,
+                       usingSpringWithDamping: 0.3,
+                       initialSpringVelocity: 1,
+                       options: [.autoreverse],
+                       animations: {
+                        let scale = CGAffineTransform(scaleX: 0.8, y: 0.8)
+                        self.photoImageView.transform = scale
+                        self.shadowView.transform = scale
+
+        }) { _ in
+            self.photoImageView.transform = .identity
+            self.shadowView.transform = .identity
         }
     }
 }

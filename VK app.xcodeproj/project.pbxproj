@@ -10,7 +10,7 @@
 		123ECD1626513A3C00D3D8C8 /* LikeControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123ECD1526513A3C00D3D8C8 /* LikeControl.swift */; };
 		123FFF4B2619939800FC018A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123FFF4A2619939800FC018A /* AppDelegate.swift */; };
 		123FFF4D2619939800FC018A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123FFF4C2619939800FC018A /* SceneDelegate.swift */; };
-		123FFF4F2619939800FC018A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123FFF4E2619939800FC018A /* ViewController.swift */; };
+		123FFF4F2619939800FC018A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123FFF4E2619939800FC018A /* LoginViewController.swift */; };
 		123FFF522619939800FC018A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 123FFF502619939800FC018A /* Main.storyboard */; };
 		123FFF552619939800FC018A /* VK_app.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 123FFF532619939800FC018A /* VK_app.xcdatamodeld */; };
 		123FFF572619939900FC018A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 123FFF562619939900FC018A /* Assets.xcassets */; };
@@ -43,7 +43,7 @@
 		123FFF472619939800FC018A /* VK app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VK app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		123FFF4A2619939800FC018A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		123FFF4C2619939800FC018A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		123FFF4E2619939800FC018A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		123FFF4E2619939800FC018A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		123FFF512619939800FC018A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		123FFF542619939800FC018A /* VK_app.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = VK_app.xcdatamodel; sourceTree = "<group>"; };
 		123FFF562619939900FC018A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -87,7 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				12F0578D265503E40033B761 /* LoadingViewController.swift */,
-				123FFF4E2619939800FC018A /* ViewController.swift */,
+				123FFF4E2619939800FC018A /* LoginViewController.swift */,
 				128E7FCA26516AA400C93636 /* Controls */,
 				128E7FC82651697100C93636 /* Groups */,
 				1269067C2653FF2300572BAD /* News */,
@@ -323,7 +323,7 @@
 				12B339C526275CB1007C6C0A /* CustomElements.swift in Sources */,
 				12EBD4062623587700CDBAD8 /* UserCell.swift in Sources */,
 				1269066126519E5000572BAD /* FriendCellXib.swift in Sources */,
-				123FFF4F2619939800FC018A /* ViewController.swift in Sources */,
+				123FFF4F2619939800FC018A /* LoginViewController.swift in Sources */,
 				123FFF4B2619939800FC018A /* AppDelegate.swift in Sources */,
 				126906802653FF7900572BAD /* News.swift in Sources */,
 				123FFF4D2619939800FC018A /* SceneDelegate.swift in Sources */,

@@ -286,7 +286,7 @@
         <!--Item-->
         <scene sceneID="Rl2-Rh-LrL">
             <objects>
-                <collectionViewController storyboardIdentifier="FriendsPhotoCollection" modalPresentationStyle="fullScreen" id="2iu-fg-fvc" customClass="FriendsPhotoCollection" customModule="VK_app" customModuleProvider="target" sceneMemberID="viewController">
+                <collectionViewController modalPresentationStyle="fullScreen" id="2iu-fg-fvc" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="gEI-AZ-cGX">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -348,7 +348,22 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E8Z-ws-D77" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5090.7692307692305" y="-117.29857819905213"/>
+            <point key="canvasLocation" x="5091" y="-966"/>
+        </scene>
+        <!--Photo To FriendVC-->
+        <scene sceneID="NTa-l4-PwN">
+            <objects>
+                <viewController storyboardIdentifier="PhotoToFriendVC" id="wv9-K6-PZM" customClass="PhotoToFriendVC" customModule="VK_app" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Maz-Ax-h88">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="3pi-5U-l7R"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="o0c-L6-fcN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5091" y="-117"/>
         </scene>
         <!--Friends-->
         <scene sceneID="oeQ-qj-wS8">
@@ -481,7 +496,7 @@
         <!--Groups-->
         <scene sceneID="hcx-hw-LzR">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="e8s-CN-ivm" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="e8s-CN-ivm" customClass="CustomNavigationController" customModule="VK_app" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Groups" image="person.3.fill" catalog="system" id="nU1-Ua-NUz"/>
                     <toolbarItems/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
@@ -544,10 +559,10 @@
             </objects>
             <point key="canvasLocation" x="5091" y="1307"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Custom Navigation Controller-->
         <scene sceneID="AOX-y8-AhL">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="FC7-2l-REN" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="FC7-2l-REN" customClass="CustomNavigationController" customModule="VK_app" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="" image="person.2.fill" catalog="system" id="XjA-4M-COW"/>
                     <toolbarItems/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
@@ -564,10 +579,10 @@
             </objects>
             <point key="canvasLocation" x="3362" y="-117"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Custom Navigation Controller-->
         <scene sceneID="2cP-D6-AJ1">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="Lq9-nh-it2" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="Lq9-nh-it2" customClass="CustomNavigationController" customModule="VK_app" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="" image="newspaper.fill" catalog="system" id="aMP-27-fCc"/>
                     <toolbarItems/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>

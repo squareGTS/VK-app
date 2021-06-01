@@ -109,7 +109,7 @@ extension UserViewController: UISearchResultsUpdating{
         friends = Friend.getSortedUsers(searchText: searchText)
         if searchText == "" {
             latersControl.isHidden = false
-        }else{
+        } else {
             latersControl.isHidden = true
         }
         tableView.reloadData()
@@ -123,17 +123,35 @@ extension UserViewController: UITableViewDelegate {
         
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         
-        let controller = storyboard.instantiateViewController(withIdentifier: "FriendsPhotoCollection") as? FriendsPhotoCollection
+        let controller = storyboard.instantiateViewController(withIdentifier: "PhotoToFriendVC") as? PhotoToFriendVC
         
         guard let destinationController = controller else { return }
         
         let key = firstLetters[indexPath.section]
         let friendsForKey = friends[key]
+            
         if let friend = friendsForKey?[indexPath.row] {
-            destinationController.userImages = friend.photos
+            destinationController.photosToFriends = friend.photos
+            navigationController?.pushViewController(destinationController, animated: true)
         }
-        navigationController?.pushViewController(destinationController, animated: true)
     }
+    
+//    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+//        
+//        let scale = CGAffineTransform(scaleX: 0.8, y: 0.8)
+//        cell.transform = scale
+//        cell.alpha = 0.5
+//        
+//        UIView.animate(
+//            withDuration: 0.5,
+//            delay: 0, usingSpringWithDamping: 0.5,
+//            initialSpringVelocity: 0,
+//            options: [.curveEaseInOut],
+//            animations: {
+//                cell.transform = .identity
+//                cell.alpha = 1
+//            })
+//    }
 }
 
 //MARK:- UITableViewDataSource

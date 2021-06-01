@@ -228,5 +228,333 @@
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F697642E-AD33-4927-9C92-8517C1865E57"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "VK app/GalleryCollection.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "14"
+            endingLineNumber = "14"
+            landmarkName = "GalleryCollection"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "F697642E-AD33-4927-9C92-8517C1865E57 - 29354b3b3ffd0e19"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "VK_app.GalleryCollection.__allocating_init(frame: __C.CGRect, collectionViewLayout: __C.UICollectionViewLayout) -&gt; VK_app.GalleryCollection"
+                  moduleName = "VK app"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/maxim_bekmetov/Documents/App_Development_GB/GB%20Second/HW1-HW6/VK%20app/VK%20app/GalleryCollection.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "F697642E-AD33-4927-9C92-8517C1865E57 - 649e57c491e8f317"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "VK_app.GalleryCollection.init(frame: __C.CGRect, collectionViewLayout: __C.UICollectionViewLayout) -&gt; VK_app.GalleryCollection"
+                  moduleName = "VK app"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/maxim_bekmetov/Documents/App_Development_GB/GB%20Second/HW1-HW6/VK%20app/VK%20app/GalleryCollection.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "72">
+               </Location>
+               <Location
+                  uuid = "F697642E-AD33-4927-9C92-8517C1865E57 - 404a9d8d64278ee5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "VK_app.GalleryCollection.__deallocating_deinit"
+                  moduleName = "VK app"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/maxim_bekmetov/Documents/App_Development_GB/GB%20Second/HW1-HW6/VK%20app/VK%20app/GalleryCollection.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6726FDDA-0F6B-4634-B678-D97D2C07AA37"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "VK app/GalleryCollection.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "10"
+            endingLineNumber = "10"
+            landmarkName = "PhotoToFriendDelegate"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F9EB9617-EC72-4E79-A774-D776A72BD235"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "VK app/FriendsGaleryCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "10"
+            endingLineNumber = "10"
+            landmarkName = "FriendsGaleryCell"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "79E63B47-A7DA-4CC2-91E3-2B7D120D18DD"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "VK app/UI/Friends/UserController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "120"
+            endingLineNumber = "120"
+            landmarkName = "UserViewController"
+            landmarkType = "21">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CFB2FFFD-D94F-4F67-9672-803BEE88F0DE"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "VK app/UI/Friends/UserController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "125"
+            endingLineNumber = "125"
+            landmarkName = "tableView(_:didSelectRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3071088B-7B69-4268-AE3A-58D57A34C535"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "VK app/PhotoToFriendVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "10"
+            endingLineNumber = "10"
+            landmarkName = "PhotoToFriendVC"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "3071088B-7B69-4268-AE3A-58D57A34C535 - f7bf09e5bdd222d9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "VK_app.PhotoToFriendVC.__allocating_init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; VK_app.PhotoToFriendVC"
+                  moduleName = "VK app"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/maxim_bekmetov/Documents/App_Development_GB/GB%20Second/HW1-HW6/VK%20app/VK%20app/PhotoToFriendVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "3071088B-7B69-4268-AE3A-58D57A34C535 - e832f0e303bb7221"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "VK_app.PhotoToFriendVC.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; VK_app.PhotoToFriendVC"
+                  moduleName = "VK app"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/maxim_bekmetov/Documents/App_Development_GB/GB%20Second/HW1-HW6/VK%20app/VK%20app/PhotoToFriendVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "92">
+               </Location>
+               <Location
+                  uuid = "3071088B-7B69-4268-AE3A-58D57A34C535 - 994967fe0a64b7e1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "VK_app.PhotoToFriendVC.__allocating_init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;VK_app.PhotoToFriendVC&gt;"
+                  moduleName = "VK app"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/maxim_bekmetov/Documents/App_Development_GB/GB%20Second/HW1-HW6/VK%20app/VK%20app/PhotoToFriendVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "3071088B-7B69-4268-AE3A-58D57A34C535 - b4324922706292df"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "VK_app.PhotoToFriendVC.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;VK_app.PhotoToFriendVC&gt;"
+                  moduleName = "VK app"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/maxim_bekmetov/Documents/App_Development_GB/GB%20Second/HW1-HW6/VK%20app/VK%20app/PhotoToFriendVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "68">
+               </Location>
+               <Location
+                  uuid = "3071088B-7B69-4268-AE3A-58D57A34C535 - 22bc5cfea8c39ddb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "VK_app.PhotoToFriendVC.__deallocating_deinit"
+                  moduleName = "VK app"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/maxim_bekmetov/Documents/App_Development_GB/GB%20Second/HW1-HW6/VK%20app/VK%20app/PhotoToFriendVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BE8CCEAD-F46D-4E06-9ED8-74BCB67AD497"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "VK app/PhotoToFriendVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "PhotoToFriendVC"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "BE8CCEAD-F46D-4E06-9ED8-74BCB67AD497 - 165b599bd7cd8c1c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "VK_app.PhotoToFriendVC.galery.getter : VK_app.GalleryCollection"
+                  moduleName = "VK app"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/maxim_bekmetov/Documents/App_Development_GB/GB%20Second/HW1-HW6/VK%20app/VK%20app/PhotoToFriendVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "108">
+               </Location>
+               <Location
+                  uuid = "BE8CCEAD-F46D-4E06-9ED8-74BCB67AD497 - 8021805d78b30c28"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "VK_app.PhotoToFriendVC.galery.setter : VK_app.GalleryCollection"
+                  moduleName = "VK app"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/maxim_bekmetov/Documents/App_Development_GB/GB%20Second/HW1-HW6/VK%20app/VK%20app/PhotoToFriendVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "128">
+               </Location>
+               <Location
+                  uuid = "BE8CCEAD-F46D-4E06-9ED8-74BCB67AD497 - e62b916bb8883e4a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "VK_app.PhotoToFriendVC.galery.modify : VK_app.GalleryCollection"
+                  moduleName = "VK app"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/maxim_bekmetov/Documents/App_Development_GB/GB%20Second/HW1-HW6/VK%20app/VK%20app/PhotoToFriendVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "BE8CCEAD-F46D-4E06-9ED8-74BCB67AD497 - 9d38fd7e8dd5cf13"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "VK_app.PhotoToFriendVC.galery.modify : VK_app.GalleryCollection with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "VK app"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/maxim_bekmetov/Documents/App_Development_GB/GB%20Second/HW1-HW6/VK%20app/VK%20app/PhotoToFriendVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  uuid = "BE8CCEAD-F46D-4E06-9ED8-74BCB67AD497 - e832f0e303bb72ce"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "VK_app.PhotoToFriendVC.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; VK_app.PhotoToFriendVC"
+                  moduleName = "VK app"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/maxim_bekmetov/Documents/App_Development_GB/GB%20Second/HW1-HW6/VK%20app/VK%20app/PhotoToFriendVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "140">
+               </Location>
+               <Location
+                  uuid = "BE8CCEAD-F46D-4E06-9ED8-74BCB67AD497 - b432492270629230"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "VK_app.PhotoToFriendVC.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;VK_app.PhotoToFriendVC&gt;"
+                  moduleName = "VK app"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/maxim_bekmetov/Documents/App_Development_GB/GB%20Second/HW1-HW6/VK%20app/VK%20app/PhotoToFriendVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "116">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

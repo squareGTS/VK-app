@@ -18,18 +18,18 @@ class NewsTableViewController: UIViewController {
         
         tableView.register(UINib(nibName: "NewsCell", bundle: nil), forCellReuseIdentifier: NewsCellXib.reusedId)
         
-       // tableView.delegate = self
+        // tableView.delegate = self
         tableView.dataSource = self
     }
 }
 
 //MARK:- UITableViewDelegate
 extension NewsTableViewController: UITableViewDelegate {
-//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-//
-//        let controller = storyboard.instantiateViewController(withIdentifier: "") as?
-//    }
+    //    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    //        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+    //
+    //        let controller = storyboard.instantiateViewController(withIdentifier: "") as?
+    //    }
 }
 
 

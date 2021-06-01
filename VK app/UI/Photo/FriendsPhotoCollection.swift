@@ -59,3 +59,5 @@ extension FriendsPhotoCollection: UICollectionViewDelegateFlowLayout {
         return CGSize(width: widthItem, height: widthItem)
     }
 }
+
+

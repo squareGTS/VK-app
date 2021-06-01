@@ -37,4 +37,22 @@ class AllGroupsController: UITableViewController {
         }
         return cell
     }
+    
+    
+    override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        
+        let scale = CGAffineTransform(scaleX: 0.8, y: 0.8)
+        cell.transform = scale
+        cell.alpha = 0.5
+        
+        UIView.animate(
+            withDuration: 0.5,
+            delay: 0, usingSpringWithDamping: 0.5,
+            initialSpringVelocity: 0,
+            options: [.curveEaseInOut],
+            animations: {
+                cell.transform = .identity
+                cell.alpha = 1
+            })
+    }
 }

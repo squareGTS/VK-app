@@ -24,7 +24,6 @@ class PhotoToFriendVC: UIViewController, PhotoToFriendDelegate {
         galery.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
         
         galery.set(photos: photosToFriends)
-        print(photosToFriends)
         galery.reloadData()
     }
     

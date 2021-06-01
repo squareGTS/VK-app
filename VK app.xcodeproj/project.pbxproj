@@ -109,6 +109,15 @@
 			path = "Custom Navigation Controller";
 			sourceTree = "<group>";
 		};
+		120F237C26667E45000E07A5 /* Swipe Gallery */ = {
+			isa = PBXGroup;
+			children = (
+				120F237A266640A1000E07A5 /* PresentGaleryVC.swift */,
+				120F237626662528000E07A5 /* GalleryCollection.swift */,
+			);
+			path = "Swipe Gallery";
+			sourceTree = "<group>";
+		};
 		121443D8261E251400CBC6B7 /* UI */ = {
 			isa = PBXGroup;
 			children = (
@@ -149,8 +158,7 @@
 				123FFF502619939800FC018A /* Main.storyboard */,
 				120F237426662480000E07A5 /* FriendsGaleryCell.swift */,
 				120F237826663FA1000E07A5 /* PhotoToFriendVC.swift */,
-				120F237626662528000E07A5 /* GalleryCollection.swift */,
-				120F237A266640A1000E07A5 /* PresentGaleryVC.swift */,
+				120F237C26667E45000E07A5 /* Swipe Gallery */,
 				120F237326662203000E07A5 /* Custom Navigation Controller */,
 				1269067A2653937400572BAD /* HeaderSectionTableView.swift */,
 				12B339C426275CB1007C6C0A /* CustomElements.swift */,
